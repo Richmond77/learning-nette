@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+
+	<title>Class Tracy\Logger | Nette 2.3.7 API</title>
+
+	<link rel="stylesheet" href="resources/style.css?2213164932">
+	<link rel="search" type="application/opensearchdescription+xml" title="Nette 2.3.7 API" href="https://api.nette.org/2.0/opensearch.xml">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-Latte.html">Latte<span></span></a>
+						<ul>
+				<li><a href="namespace-Latte.Loaders.html">Loaders</a>
+						</li>
+				<li><a href="namespace-Latte.Macros.html">Macros</a>
+						</li>
+				<li><a href="namespace-Latte.Runtime.html">Runtime</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.html">Nette<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Application.html">Application<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Application.Responses.html">Responses</a>
+						</li>
+				<li><a href="namespace-Nette.Application.Routers.html">Routers</a>
+						</li>
+				<li><a href="namespace-Nette.Application.UI.html">UI</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Bridges.html">Bridges<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Bridges.ApplicationDI.html">ApplicationDI</a>
+						</li>
+				<li><a href="namespace-Nette.Bridges.ApplicationLatte.html">ApplicationLatte</a>
+						</li>
+				<li><a href="namespace-Nette.Bridges.ApplicationTracy.html">ApplicationTracy</a>
+						</li>
+				<li><a href="namespace-Nette.Bridges.CacheDI.html">CacheDI</a>
+						</li>
+				<li><a href="namespace-Nette.Bridges.CacheLatte.html">CacheLatte</a>
+						</li>
+				<li><a href="namespace-Nette.Bridges.DatabaseDI.html">DatabaseDI</a>
+						</li>
+				<li><a href="namespace-Nette.Bridges.DatabaseTracy.html">DatabaseTracy</a>
+						</li>
+				<li><a href="namespace-Nette.Bridges.DITracy.html">DITracy</a>
+						</li>
+				<li><a href="namespace-Nette.Bridges.FormsDI.html">FormsDI</a>
+						</li>
+				<li><a href="namespace-Nette.Bridges.FormsLatte.html">FormsLatte</a>
+						</li>
+				<li><a href="namespace-Nette.Bridges.Framework.html">Framework</a>
+						</li>
+				<li><a href="namespace-Nette.Bridges.HttpDI.html">HttpDI</a>
+						</li>
+				<li><a href="namespace-Nette.Bridges.HttpTracy.html">HttpTracy</a>
+						</li>
+				<li><a href="namespace-Nette.Bridges.MailDI.html">MailDI</a>
+						</li>
+				<li><a href="namespace-Nette.Bridges.ReflectionDI.html">ReflectionDI</a>
+						</li>
+				<li><a href="namespace-Nette.Bridges.SecurityDI.html">SecurityDI</a>
+						</li>
+				<li><a href="namespace-Nette.Bridges.SecurityTracy.html">SecurityTracy</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Caching.html">Caching<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Caching.Storages.html">Storages</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.ComponentModel.html">ComponentModel</a>
+						</li>
+				<li><a href="namespace-Nette.Database.html">Database<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Database.Conventions.html">Conventions</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Drivers.html">Drivers</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Table.html">Table</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.DI.html">DI<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.DI.Config.html">Config<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.DI.Config.Adapters.html">Adapters</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.DI.Extensions.html">Extensions</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.html">Forms<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Forms.Controls.html">Controls</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.Rendering.html">Rendering</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Http.html">Http</a>
+						</li>
+				<li><a href="namespace-Nette.Iterators.html">Iterators</a>
+						</li>
+				<li><a href="namespace-Nette.Latte.html">Latte</a>
+						</li>
+				<li><a href="namespace-Nette.Loaders.html">Loaders</a>
+						</li>
+				<li><a href="namespace-Nette.Localization.html">Localization</a>
+						</li>
+				<li><a href="namespace-Nette.Mail.html">Mail</a>
+						</li>
+				<li><a href="namespace-Nette.Neon.html">Neon</a>
+						</li>
+				<li><a href="namespace-Nette.PhpGenerator.html">PhpGenerator</a>
+						</li>
+				<li><a href="namespace-Nette.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Security.html">Security</a>
+						</li>
+				<li><a href="namespace-Nette.Templating.html">Templating</a>
+						</li>
+				<li><a href="namespace-Nette.Utils.html">Utils</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-NetteModule.html">NetteModule</a>
+						</li>
+				<li><a href="namespace-none.html">none</a>
+						</li>
+				<li class="active"><a href="namespace-Tracy.html">Tracy<span></span></a>
+						<ul>
+				<li><a href="namespace-Tracy.Bridges.html">Bridges<span></span></a>
+						<ul>
+				<li><a href="namespace-Tracy.Bridges.Nette.html">Nette</a>
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="Tracy.Bar.html">Bar</a></li>
+				<li><a href="Tracy.BlueScreen.html">BlueScreen</a></li>
+				<li><a href="Tracy.Debugger.html">Debugger</a></li>
+				<li><a href="Tracy.Dumper.html">Dumper</a></li>
+				<li><a href="Tracy.FireLogger.html">FireLogger</a></li>
+				<li><a href="Tracy.Helpers.html">Helpers</a></li>
+				<li class="active"><a href="Tracy.Logger.html">Logger</a></li>
+				<li><a href="Tracy.OutputDebugger.html">OutputDebugger</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="Tracy.IBarPanel.html">IBarPanel</a></li>
+				<li><a href="Tracy.ILogger.html">ILogger</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form action="https://www.google.com/cse" id="search">
+		<input type="hidden" name="cx" value="011549293477758430224:vxofa9ufnhc">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text">
+		<input type="submit" value="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Tracy.html" title="Summary of Tracy"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Logger</h1>
+
+
+	<div class="description">
+	
+<p>Logger.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>Tracy\Logger</span></b>			
+			 implements 
+				<a href="Tracy.ILogger.html"><span>Tracy\ILogger</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Tracy.html">Tracy</a><br>
+		
+
+		<b>Located at</b> <a href="source-Tracy.Logger.php.html#11-204" title="Go to source code">Tracy/Logger.php</a><br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-Tracy.Logger.php.html#35-41" title="Go to source code">__construct</a>( <span> <var>$directory</var></span>, <span> <var>$email</var> = <span class="php-keyword1">NULL</span></span>, <span><code><a href="Tracy.BlueScreen.html">Tracy\BlueScreen</a></code> <var>$blueScreen</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="log" id="_log">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_log">#</a>
+		<code><a href="source-Tracy.Logger.php.html#44-77" title="Go to source code">log</a>( <span>string|<code><a href="Exception.html">Exception</a></code>|Throwable <var>$message</var></span>, <span>integer <var>$priority</var> = <code><a href="Tracy.ILogger.html#INFO">Tracy\ILogger::<b>INFO</b></a></code></span> )</code>
+
+		<div class="description short">
+			
+<p>Logs message or exception to file and sends email notification.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Logs message or exception to file and sends email notification.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$message</var></dt>
+					<dd></dd>
+					<dt><var>$priority</var></dt>
+					<dd>of constant ILogger::INFO, WARNING, ERROR (sends email), EXCEPTION (sends
+email), CRITICAL (sends email)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>logged error filename<br>
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="Tracy.ILogger.html#_log">Tracy\ILogger::log()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="formatMessage" id="_formatMessage">
+
+		<td class="attributes"><code>
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_formatMessage">#</a>
+		<code><a href="source-Tracy.Logger.php.html#80-101" title="Go to source code">formatMessage</a>( <span>string|<code><a href="Exception.html">Exception</a></code>|Throwable <var>$message</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$message</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>string<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="formatLogLine" id="_formatLogLine">
+
+		<td class="attributes"><code>
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_formatLogLine">#</a>
+		<code><a href="source-Tracy.Logger.php.html#104-116" title="Go to source code">formatLogLine</a>( <span>string|<code><a href="Exception.html">Exception</a></code>|Throwable <var>$message</var></span>, <span> <var>$exceptionFile</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$message</var></dt>
+					<dd></dd>
+					<dt><var>$exceptionFile</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>string<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getExceptionFile" id="_getExceptionFile">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getExceptionFile">#</a>
+		<code><a href="source-Tracy.Logger.php.html#119-133" title="Go to source code">getExceptionFile</a>( <span><code><a href="Exception.html">Exception</a></code>|Throwable <var>$exception</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$exception</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>string<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="logException" id="_logException">
+
+		<td class="attributes"><code>
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_logException">#</a>
+		<code><a href="source-Tracy.Logger.php.html#136-154" title="Go to source code">logException</a>( <span><code><a href="Exception.html">Exception</a></code>|Throwable <var>$exception</var></span>, <span> <var>$file</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Logs exception to the file if file doesn't exist.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Logs exception to the file if file doesn't exist.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$exception</var></dt>
+					<dd></dd>
+					<dt><var>$file</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>logged error filename<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sendEmail" id="_sendEmail">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sendEmail">#</a>
+		<code><a href="source-Tracy.Logger.php.html#157-173" title="Go to source code">sendEmail</a>( <span>string|<code><a href="Exception.html">Exception</a></code>|Throwable <var>$message</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$message</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+	<table class="summary inherited">
+	<caption>Constants inherited from <a href="Tracy.ILogger.html#constants">Tracy\ILogger</a></caption>
+	<tr>
+		<td><code>
+			<a href="Tracy.ILogger.html#CRITICAL"><b>CRITICAL</b></a>, 
+			<a href="Tracy.ILogger.html#DEBUG"><b>DEBUG</b></a>, 
+			<a href="Tracy.ILogger.html#ERROR"><b>ERROR</b></a>, 
+			<a href="Tracy.ILogger.html#EXCEPTION"><b>EXCEPTION</b></a>, 
+			<a href="Tracy.ILogger.html#INFO"><b>INFO</b></a>, 
+			<a href="Tracy.ILogger.html#WARNING"><b>WARNING</b></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="directory" id="$directory">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-Tracy.Logger.php.html#16-17" title="Go to source code"><var>$directory</var></a>
+
+			<div class="description short">
+				
+<p>name of the directory where errors should be logged</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>name of the directory where errors should be logged</p>
+
+
+			</div>
+		</td>
+		<td class="value"><div><a href="#$directory" class="anchor">#</a><code></code></div></td>
+	</tr>
+	<tr data-order="email" id="$email">
+		<td class="attributes"><code>
+			public  
+			string|array
+		</code></td>
+
+		<td class="name">
+				<a href="source-Tracy.Logger.php.html#19-20" title="Go to source code"><var>$email</var></a>
+
+			<div class="description short">
+				
+<p>email or emails to which send error notifications</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>email or emails to which send error notifications</p>
+
+
+			</div>
+		</td>
+		<td class="value"><div><a href="#$email" class="anchor">#</a><code></code></div></td>
+	</tr>
+	<tr data-order="fromEmail" id="$fromEmail">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-Tracy.Logger.php.html#22-23" title="Go to source code"><var>$fromEmail</var></a>
+
+			<div class="description short">
+				
+<p>sender of email notifications</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>sender of email notifications</p>
+
+
+			</div>
+		</td>
+		<td class="value"><div><a href="#$fromEmail" class="anchor">#</a><code></code></div></td>
+	</tr>
+	<tr data-order="emailSnooze" id="$emailSnooze">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-Tracy.Logger.php.html#25-26" title="Go to source code"><var>$emailSnooze</var></a>
+
+			<div class="description short">
+				
+<p>interval for sending email is 2 days</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>interval for sending email is 2 days</p>
+
+
+			</div>
+		</td>
+		<td class="value"><div><a href="#$emailSnooze" class="anchor">#</a><code><span class="php-quote">'2 days'</span></code></div></td>
+	</tr>
+	<tr data-order="mailer" id="$mailer">
+		<td class="attributes"><code>
+			public  
+			callable
+		</code></td>
+
+		<td class="name">
+				<a href="source-Tracy.Logger.php.html#28-29" title="Go to source code"><var>$mailer</var></a>
+
+			<div class="description short">
+				
+<p>handler for sending emails</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>handler for sending emails</p>
+
+
+			</div>
+		</td>
+		<td class="value"><div><a href="#$mailer" class="anchor">#</a><code></code></div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Nette 2.3.7 API API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js?3581799927"></script>
+<script src="elementlist.js?3862700783"></script>
+</body>
+</html>

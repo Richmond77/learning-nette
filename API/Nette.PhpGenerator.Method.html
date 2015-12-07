@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+
+	<title>Class Nette\PhpGenerator\Method | Nette 2.3.7 API</title>
+
+	<link rel="stylesheet" href="resources/style.css?2213164932">
+	<link rel="search" type="application/opensearchdescription+xml" title="Nette 2.3.7 API" href="https://api.nette.org/2.0/opensearch.xml">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-Latte.html">Latte<span></span></a>
+						<ul>
+				<li><a href="namespace-Latte.Loaders.html">Loaders</a>
+						</li>
+				<li><a href="namespace-Latte.Macros.html">Macros</a>
+						</li>
+				<li><a href="namespace-Latte.Runtime.html">Runtime</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="namespace-Nette.html">Nette<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Application.html">Application<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Application.Responses.html">Responses</a>
+						</li>
+				<li><a href="namespace-Nette.Application.Routers.html">Routers</a>
+						</li>
+				<li><a href="namespace-Nette.Application.UI.html">UI</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Bridges.html">Bridges<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Bridges.ApplicationDI.html">ApplicationDI</a>
+						</li>
+				<li><a href="namespace-Nette.Bridges.ApplicationLatte.html">ApplicationLatte</a>
+						</li>
+				<li><a href="namespace-Nette.Bridges.ApplicationTracy.html">ApplicationTracy</a>
+						</li>
+				<li><a href="namespace-Nette.Bridges.CacheDI.html">CacheDI</a>
+						</li>
+				<li><a href="namespace-Nette.Bridges.CacheLatte.html">CacheLatte</a>
+						</li>
+				<li><a href="namespace-Nette.Bridges.DatabaseDI.html">DatabaseDI</a>
+						</li>
+				<li><a href="namespace-Nette.Bridges.DatabaseTracy.html">DatabaseTracy</a>
+						</li>
+				<li><a href="namespace-Nette.Bridges.DITracy.html">DITracy</a>
+						</li>
+				<li><a href="namespace-Nette.Bridges.FormsDI.html">FormsDI</a>
+						</li>
+				<li><a href="namespace-Nette.Bridges.FormsLatte.html">FormsLatte</a>
+						</li>
+				<li><a href="namespace-Nette.Bridges.Framework.html">Framework</a>
+						</li>
+				<li><a href="namespace-Nette.Bridges.HttpDI.html">HttpDI</a>
+						</li>
+				<li><a href="namespace-Nette.Bridges.HttpTracy.html">HttpTracy</a>
+						</li>
+				<li><a href="namespace-Nette.Bridges.MailDI.html">MailDI</a>
+						</li>
+				<li><a href="namespace-Nette.Bridges.ReflectionDI.html">ReflectionDI</a>
+						</li>
+				<li><a href="namespace-Nette.Bridges.SecurityDI.html">SecurityDI</a>
+						</li>
+				<li><a href="namespace-Nette.Bridges.SecurityTracy.html">SecurityTracy</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Caching.html">Caching<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Caching.Storages.html">Storages</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.ComponentModel.html">ComponentModel</a>
+						</li>
+				<li><a href="namespace-Nette.Database.html">Database<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Database.Conventions.html">Conventions</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Drivers.html">Drivers</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Table.html">Table</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.DI.html">DI<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.DI.Config.html">Config<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.DI.Config.Adapters.html">Adapters</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.DI.Extensions.html">Extensions</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.html">Forms<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Forms.Controls.html">Controls</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.Rendering.html">Rendering</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Http.html">Http</a>
+						</li>
+				<li><a href="namespace-Nette.Iterators.html">Iterators</a>
+						</li>
+				<li><a href="namespace-Nette.Latte.html">Latte</a>
+						</li>
+				<li><a href="namespace-Nette.Loaders.html">Loaders</a>
+						</li>
+				<li><a href="namespace-Nette.Localization.html">Localization</a>
+						</li>
+				<li><a href="namespace-Nette.Mail.html">Mail</a>
+						</li>
+				<li><a href="namespace-Nette.Neon.html">Neon</a>
+						</li>
+				<li class="active"><a href="namespace-Nette.PhpGenerator.html">PhpGenerator</a>
+						</li>
+				<li><a href="namespace-Nette.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Security.html">Security</a>
+						</li>
+				<li><a href="namespace-Nette.Templating.html">Templating</a>
+						</li>
+				<li><a href="namespace-Nette.Utils.html">Utils</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-NetteModule.html">NetteModule</a>
+						</li>
+				<li><a href="namespace-none.html">none</a>
+						</li>
+				<li><a href="namespace-Tracy.html">Tracy<span></span></a>
+						<ul>
+				<li><a href="namespace-Tracy.Bridges.html">Bridges<span></span></a>
+						<ul>
+				<li><a href="namespace-Tracy.Bridges.Nette.html">Nette</a>
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="Nette.PhpGenerator.ClassType.html">ClassType</a></li>
+				<li><a href="Nette.PhpGenerator.Helpers.html">Helpers</a></li>
+				<li class="active"><a href="Nette.PhpGenerator.Method.html">Method</a></li>
+				<li><a href="Nette.PhpGenerator.Parameter.html">Parameter</a></li>
+				<li><a href="Nette.PhpGenerator.PhpFile.html">PhpFile</a></li>
+				<li><a href="Nette.PhpGenerator.PhpLiteral.html">PhpLiteral</a></li>
+				<li><a href="Nette.PhpGenerator.PhpNamespace.html">PhpNamespace</a></li>
+				<li><a href="Nette.PhpGenerator.Property.html">Property</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form action="https://www.google.com/cse" id="search">
+		<input type="hidden" name="cx" value="011549293477758430224:vxofa9ufnhc">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text">
+		<input type="submit" value="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Nette.PhpGenerator.html" title="Summary of Nette\PhpGenerator"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Method</h1>
+
+
+	<div class="description">
+	
+<p>Method or function description.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="Nette.Object.html"><span>Nette\Object</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>Nette\PhpGenerator\Method</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Nette.html">Nette</a>\<a href="namespace-Nette.PhpGenerator.html">PhpGenerator</a><br>
+		
+
+		<b>Located at</b> <a href="source-PhpGenerator.Method.php.html#13-438" title="Go to source code">PhpGenerator/Method.php</a><br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="from" id="_from">
+
+		<td class="attributes"><code>
+			 public static
+			<code><a href="Nette.PhpGenerator.Method.html">Nette\PhpGenerator\Method</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_from">#</a>
+		<code><a href="source-PhpGenerator.Method.php.html#58-89" title="Go to source code">from</a>( <span> <var>$from</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="Nette.PhpGenerator.Method.html">Nette\PhpGenerator\Method</a></code></code><br>self<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-PhpGenerator.Method.php.html#92-98" title="Go to source code">__construct</a>( <span>string|null <var>$name</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__toString" id="___toString">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___toString">#</a>
+		<code><a href="source-PhpGenerator.Method.php.html#101-135" title="Go to source code">__toString</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>PHP code<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setName" id="_setName">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="Nette.PhpGenerator.Method.html">Nette\PhpGenerator\Method</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setName">#</a>
+		<code><a href="source-PhpGenerator.Method.php.html#138-146" title="Go to source code">setName</a>( <span>string|null <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="Nette.PhpGenerator.Method.html">Nette\PhpGenerator\Method</a></code></code><br>self<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getName" id="_getName">
+
+		<td class="attributes"><code>
+			 public 
+			string|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getName">#</a>
+		<code><a href="source-PhpGenerator.Method.php.html#149-155" title="Go to source code">getName</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string|null</code><br>string|NULL<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setParameters" id="_setParameters">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="Nette.PhpGenerator.Method.html">Nette\PhpGenerator\Method</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setParameters">#</a>
+		<code><a href="source-PhpGenerator.Method.php.html#158-172" title="Go to source code">setParameters</a>( <span>array <var>$val</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$val</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="Nette.PhpGenerator.Method.html">Nette\PhpGenerator\Method</a></code></code><br>self<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getParameters" id="_getParameters">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="Nette.PhpGenerator.Parameter.html">Nette\PhpGenerator\Parameter</a>[]</code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getParameters">#</a>
+		<code><a href="source-PhpGenerator.Method.php.html#175-181" title="Go to source code">getParameters</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="Nette.PhpGenerator.Parameter.html">Nette\PhpGenerator\Parameter</a>[]</code></code><br>Parameter[]<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addParameter" id="_addParameter">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="Nette.PhpGenerator.Parameter.html">Nette\PhpGenerator\Parameter</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addParameter">#</a>
+		<code><a href="source-PhpGenerator.Method.php.html#184-195" title="Go to source code">addParameter</a>( <span>string <var>$name</var></span>, <span> <var>$defaultValue</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd>$</dd>
+					<dt><var>$defaultValue</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="Nette.PhpGenerator.Parameter.html">Nette\PhpGenerator\Parameter</a></code></code><br>Parameter<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setUses" id="_setUses">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="Nette.PhpGenerator.Method.html">Nette\PhpGenerator\Method</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setUses">#</a>
+		<code><a href="source-PhpGenerator.Method.php.html#198-205" title="Go to source code">setUses</a>( <span>array <var>$val</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="Nette.PhpGenerator.Method.html">Nette\PhpGenerator\Method</a></code></code><br>self<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getUses" id="_getUses">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getUses">#</a>
+		<code><a href="source-PhpGenerator.Method.php.html#208-214" title="Go to source code">getUses</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>array<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addUse" id="_addUse">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="Nette.PhpGenerator.Parameter.html">Nette\PhpGenerator\Parameter</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addUse">#</a>
+		<code><a href="source-PhpGenerator.Method.php.html#217-223" title="Go to source code">addUse</a>( <span> <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="Nette.PhpGenerator.Parameter.html">Nette\PhpGenerator\Parameter</a></code></code><br>Parameter<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setBody" id="_setBody">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="Nette.PhpGenerator.Method.html">Nette\PhpGenerator\Method</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setBody">#</a>
+		<code><a href="source-PhpGenerator.Method.php.html#226-233" title="Go to source code">setBody</a>( <span> <var>$statement</var></span>, <span>array <var>$args</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="Nette.PhpGenerator.Method.html">Nette\PhpGenerator\Method</a></code></code><br>self<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getBody" id="_getBody">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getBody">#</a>
+		<code><a href="source-PhpGenerator.Method.php.html#236-242" title="Go to source code">getBody</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>string<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addBody" id="_addBody">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="Nette.PhpGenerator.Method.html">Nette\PhpGenerator\Method</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addBody">#</a>
+		<code><a href="source-PhpGenerator.Method.php.html#245-252" title="Go to source code">addBody</a>( <span> <var>$statement</var></span>, <span>array <var>$args</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="Nette.PhpGenerator.Method.html">Nette\PhpGenerator\Method</a></code></code><br>self<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setStatic" id="_setStatic">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="Nette.PhpGenerator.Method.html">Nette\PhpGenerator\Method</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setStatic">#</a>
+		<code><a href="source-PhpGenerator.Method.php.html#255-263" title="Go to source code">setStatic</a>( <span>boolean <var>$val</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$val</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="Nette.PhpGenerator.Method.html">Nette\PhpGenerator\Method</a></code></code><br>self<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isStatic" id="_isStatic">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isStatic">#</a>
+		<code><a href="source-PhpGenerator.Method.php.html#266-272" title="Go to source code">isStatic</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>bool<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setVisibility" id="_setVisibility">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="Nette.PhpGenerator.Method.html">Nette\PhpGenerator\Method</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setVisibility">#</a>
+		<code><a href="source-PhpGenerator.Method.php.html#275-286" title="Go to source code">setVisibility</a>( <span>string|null <var>$val</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$val</var></dt>
+					<dd>public|protected|private</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="Nette.PhpGenerator.Method.html">Nette\PhpGenerator\Method</a></code></code><br>self<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getVisibility" id="_getVisibility">
+
+		<td class="attributes"><code>
+			 public 
+			string|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getVisibility">#</a>
+		<code><a href="source-PhpGenerator.Method.php.html#289-295" title="Go to source code">getVisibility</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string|null</code><br>string|NULL<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setFinal" id="_setFinal">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="Nette.PhpGenerator.Method.html">Nette\PhpGenerator\Method</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setFinal">#</a>
+		<code><a href="source-PhpGenerator.Method.php.html#298-306" title="Go to source code">setFinal</a>( <span>boolean <var>$val</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$val</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="Nette.PhpGenerator.Method.html">Nette\PhpGenerator\Method</a></code></code><br>self<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isFinal" id="_isFinal">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isFinal">#</a>
+		<code><a href="source-PhpGenerator.Method.php.html#309-315" title="Go to source code">isFinal</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>bool<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setAbstract" id="_setAbstract">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="Nette.PhpGenerator.Method.html">Nette\PhpGenerator\Method</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setAbstract">#</a>
+		<code><a href="source-PhpGenerator.Method.php.html#318-326" title="Go to source code">setAbstract</a>( <span>boolean <var>$val</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$val</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="Nette.PhpGenerator.Method.html">Nette\PhpGenerator\Method</a></code></code><br>self<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isAbstract" id="_isAbstract">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isAbstract">#</a>
+		<code><a href="source-PhpGenerator.Method.php.html#329-335" title="Go to source code">isAbstract</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>bool<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setReturnReference" id="_setReturnReference">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="Nette.PhpGenerator.Method.html">Nette\PhpGenerator\Method</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setReturnReference">#</a>
+		<code><a href="source-PhpGenerator.Method.php.html#338-346" title="Go to source code">setReturnReference</a>( <span>boolean <var>$val</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$val</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="Nette.PhpGenerator.Method.html">Nette\PhpGenerator\Method</a></code></code><br>self<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getReturnReference" id="_getReturnReference">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getReturnReference">#</a>
+		<code><a href="source-PhpGenerator.Method.php.html#349-355" title="Go to source code">getReturnReference</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>bool<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setVariadic" id="_setVariadic">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="Nette.PhpGenerator.Method.html">Nette\PhpGenerator\Method</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setVariadic">#</a>
+		<code><a href="source-PhpGenerator.Method.php.html#358-366" title="Go to source code">setVariadic</a>( <span>boolean <var>$val</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$val</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="Nette.PhpGenerator.Method.html">Nette\PhpGenerator\Method</a></code></code><br>self<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isVariadic" id="_isVariadic">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isVariadic">#</a>
+		<code><a href="source-PhpGenerator.Method.php.html#369-375" title="Go to source code">isVariadic</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>bool<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDocuments" id="_setDocuments">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="Nette.PhpGenerator.Method.html">Nette\PhpGenerator\Method</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDocuments">#</a>
+		<code><a href="source-PhpGenerator.Method.php.html#378-386" title="Go to source code">setDocuments</a>( <span>array <var>$val</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$val</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="Nette.PhpGenerator.Method.html">Nette\PhpGenerator\Method</a></code></code><br>self<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDocuments" id="_getDocuments">
+
+		<td class="attributes"><code>
+			 public 
+			string[]
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDocuments">#</a>
+		<code><a href="source-PhpGenerator.Method.php.html#389-395" title="Go to source code">getDocuments</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string[]</code><br>string[]<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addDocument" id="_addDocument">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="Nette.PhpGenerator.Method.html">Nette\PhpGenerator\Method</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addDocument">#</a>
+		<code><a href="source-PhpGenerator.Method.php.html#398-406" title="Go to source code">addDocument</a>( <span>string <var>$val</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$val</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="Nette.PhpGenerator.Method.html">Nette\PhpGenerator\Method</a></code></code><br>self<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setNamespace" id="_setNamespace">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="Nette.PhpGenerator.Method.html">Nette\PhpGenerator\Method</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setNamespace">#</a>
+		<code><a href="source-PhpGenerator.Method.php.html#409-416" title="Go to source code">setNamespace</a>( <span><code><a href="Nette.PhpGenerator.PhpNamespace.html">Nette\PhpGenerator\PhpNamespace</a></code> <var>$val</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="Nette.PhpGenerator.Method.html">Nette\PhpGenerator\Method</a></code></code><br>self<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setReturnType" id="_setReturnType">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="Nette.PhpGenerator.Method.html">Nette\PhpGenerator\Method</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setReturnType">#</a>
+		<code><a href="source-PhpGenerator.Method.php.html#419-427" title="Go to source code">setReturnType</a>( <span>string|null <var>$val</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$val</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="Nette.PhpGenerator.Method.html">Nette\PhpGenerator\Method</a></code></code><br>self<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getReturnType" id="_getReturnType">
+
+		<td class="attributes"><code>
+			 public 
+			string|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getReturnType">#</a>
+		<code><a href="source-PhpGenerator.Method.php.html#430-436" title="Go to source code">getReturnType</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string|null</code><br>string|NULL<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="Nette.Object.html#methods">Nette\Object</a></caption>
+	<tr>
+		<td><code>
+			<a href="Nette.Object.html#___call">__call()</a>, 
+			<a href="Nette.Object.html#___callStatic">__callStatic()</a>, 
+			<a href="Nette.Object.html#___get">__get()</a>, 
+			<a href="Nette.Object.html#___isset">__isset()</a>, 
+			<a href="Nette.Object.html#___set">__set()</a>, 
+			<a href="Nette.Object.html#___unset">__unset()</a>, 
+			<a href="Nette.Object.html#_extensionMethod">extensionMethod()</a>, 
+			<a href="Nette.Object.html#_getReflection">getReflection()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary inherited">
+	<caption>Magic properties inherited from <a href="Nette.Object.html#properties">Nette\Object</a></caption>
+	<tr>
+		<td><code>
+			<a href="Nette.Object.html#m$reflection"><var>$reflection</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+</div>
+
+	<div id="footer">
+		Nette 2.3.7 API API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js?3581799927"></script>
+<script src="elementlist.js?3862700783"></script>
+</body>
+</html>

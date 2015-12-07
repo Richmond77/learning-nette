@@ -1,0 +1,11 @@
+{block content}
+	<h1 n:block="title">Blogisek</h1>
+
+	<a n:href="Post:create" n:if="$user->loggedIn">Vytvoř nový příspěvek</a>
+
+	<div n:foreach="$posts as $post">
+		<h2><a href="{link Post:show $post->id}">{$post->title}</a></h2>
+		<div>{$post->created_at|date: "F j, Y"}</div>
+		<p>{$post->content}</p>
+	</div>
+{/block}
